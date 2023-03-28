@@ -27,8 +27,8 @@ for terminal in "\$TERMINAL" x-terminal-emulator mate-terminal gnome-terminal te
   fi
 done
 
-\$(echo "$encoded_text" | base64 -d > /tmp/source.rb)
-irb -r /tmp/source.rb
+src=\$(echo "$encoded_text" | base64 -d)
+ruby -e "\$src"
 EOF
 
 # make script executable
