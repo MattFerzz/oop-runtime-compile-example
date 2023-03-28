@@ -5,7 +5,7 @@ class Console
 
     def write(&message)
         @output_file.puts(message.call)
-    rescue Exception
+    rescue
         @output_file.puts(error_message)
     ensure
         @output_file.flush
