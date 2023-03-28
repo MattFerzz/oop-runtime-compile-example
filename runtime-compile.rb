@@ -1,6 +1,6 @@
 class Console
-    def initialize(output_location)
-        @output_file = File.open(output_location, "w")
+    def initialize(output_file)
+        @output_file = output_file
     end
 
     def write(&message)
@@ -28,7 +28,7 @@ class Calculadora
     end 
 end
 
-console = Console.new("console.txt")
+console = Console.new(File.open("console.txt", "w"))
 Thread.new do
     loop do
         sleep(1)
