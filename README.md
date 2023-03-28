@@ -8,4 +8,7 @@ Then you can run the script with:
 irb -I . -r runtime-compile.rb
 ```
 
-If you dont have ruby in your system you can use the provided devcontainer.
+Or, if you want to increase the difficulty of the challenge a little bit, you can get the latest script from the github artifacts where the source code won't be visible.
+(a version of the script with configurable source code will be available soon™.)
+
+(If you dont have ruby in your system you can use the provided devcontainer.)
