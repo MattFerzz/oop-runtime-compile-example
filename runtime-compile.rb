@@ -28,6 +28,8 @@ class Calculadora
     end 
 end
 
+require 'irb'
+
 console = Console.new(File.open("console.txt", "w"))
 Thread.new do
     loop do
@@ -37,3 +39,5 @@ Thread.new do
         end
     end
 end
+
+IRB.start
